@@ -4,5 +4,10 @@
 // remove - remove class
 // toggle - toggles class
 
-const navToggle = document.querySelector('.toggle')
-const links = document.querySelector('.links')
+const navToggle = document.querySelector('.nav-toggle');
+const links = document.querySelector('.links');
+
+navToggle.addEventListener('click', function ()
+{
+    console.log(links.classList.contains('random'))
+});
