@@ -8,5 +8,5 @@ btn.addEventListener('click', function ()
 {
     colorIndex = Math.floor(Math.random() * colors.length)
     document.body.style.backgroundColor = colors[colorIndex]
-    // color.innerText = colors[colorIndex].toString()
+    color.innerText = colors[colorIndex]
 })
