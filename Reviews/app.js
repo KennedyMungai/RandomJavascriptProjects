@@ -53,5 +53,9 @@ let currentItem = 0
 // Load initial item
 window.addEventListener('DOMContentLoaded', function ()
 {
-  console.log("Shake that thing miss Kana Kana")
+  const item = reviews[currentItem]
+  img.src = item.img
+  author.textContent = item.name
+  job.textContent = item.job
+  info.textContent = item.text
 })
