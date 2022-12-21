@@ -26,6 +26,19 @@ btns.forEach(function (btn)
             return;
         }
 
-        value.innerText = count.toString()
+        if (count > 0)
+        {
+            value.style.color = "green"
+        }
+        else if (count === 0)
+        {
+            value.style.color = "orange"
+        }
+        else
+        {
+            value.style.color = "red"
+        }
+
+        value.textContent = count.toString()
     })
 })
