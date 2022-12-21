@@ -49,3 +49,9 @@ const nextBtn = document.querySelector('.next-btn')
 const randomBtn = document.querySelector('random-btn')
 
 let currentItem = 0
+
+// Load initial item
+window.addEventListener('DOMContentLoaded', function ()
+{
+  console.log("Shake that thing miss Kana Kana")
+})
