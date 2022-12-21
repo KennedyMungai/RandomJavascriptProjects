@@ -26,6 +26,6 @@ btns.forEach(function (btn)
             return;
         }
 
-        console.log(count)
+        value.innerText = count.toString()
     })
 })
