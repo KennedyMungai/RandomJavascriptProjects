@@ -6,6 +6,7 @@ const page = document.querySelector('.container')
 
 btn.addEventListener('click', function ()
 {
-    colorIndex = Math.floor(Math.random() * colors.length - 1)
-    main.style.backgroundColor = colors[colorIndex]
+    colorIndex = Math.floor(Math.random() * colors.length)
+    document.body.style.backgroundColor = colors[colorIndex]
+    // color.innerText = colors[colorIndex].toString()
 })
