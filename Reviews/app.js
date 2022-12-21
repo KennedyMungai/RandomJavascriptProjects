@@ -68,6 +68,12 @@ function showPerson(person)
 nextBtn.addEventListener('click', function ()
 {
   currentItem++
+
+  if (currentItem > reviews.length - 1)
+  {
+    currentItem = 0
+  }
+
   showPerson(currentItem)
 })
 
