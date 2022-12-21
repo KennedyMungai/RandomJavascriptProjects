@@ -5,30 +5,27 @@ const value = document.querySelector('#value')
 
 btns.forEach(function (btn)
 {
-    if (btn.classList.contains('increase'))
+    btn.addEventListener('click', function (e)
     {
-        btn.addEventListener('click', function ()
-        {
-            count++
-        })
+        const styles = e.currentTarget.classList
 
-    }
-    else if (btn.classList.contains('decrease'))
-    {
-        btn.addEventListener('click', function ()
+        if (styles.contains('decrease'))
         {
             count--
-        })
-    }
-    else if (btn.classList.contains('reset'))
-    {
-        btn.addEventListener('click', function ()
+        }
+        else if (styles.contains('increase'))
+        {
+            count++
+        }
+        else if ('reset')
         {
             count = 0
-        })
-    }
-    else
-    {
-        return;
-    }
+        }
+        else
+        {
+            return;
+        }
+
+        console.log(count)
+    })
 })
