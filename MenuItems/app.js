@@ -99,5 +99,7 @@ window.addEventListener('DOMContentLoaded', function ()
     `
   })
 
+  displayMenu = displayMenu.join('')
+
   console.log(displayMenu)
 })
