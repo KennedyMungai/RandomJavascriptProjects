@@ -101,5 +101,7 @@ window.addEventListener('DOMContentLoaded', function ()
 
   displayMenu = displayMenu.join('')
 
-  console.log(displayMenu)
+  // console.log(displayMenu)
+
+  sectionCenter.innerHTML = displayMenu
 })
