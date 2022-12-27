@@ -81,9 +81,23 @@ window.addEventListener('DOMContentLoaded', function ()
   // console.log('shake that thing miss Kana Kana')
   let displayMenu = menu.map(function (item)
   {
-    console.log(item)
+    // console.log(item)
 
-    return item
+    return `
+    <article class="menu-item">
+      <img src="menu-item.jpeg" alt="Food" class="photo">
+      <div class="item-info">
+        <header>
+          <h4>Buttermilk Pancakes</h4>
+          <h4 class="price">$15</h4>
+        </header>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat cupiditate maxime laborum eveniet placeat
+          qui vel obcaecati officia non adipisci.
+        </p>
+      </div>
+    </article>
+    `
   })
 
   console.log(displayMenu)
