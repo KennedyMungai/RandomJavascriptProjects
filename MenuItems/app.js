@@ -85,7 +85,7 @@ window.addEventListener('DOMContentLoaded', function ()
 
 function displayMenuItems(menuItems)
 {
-  let displayMenu = menu.map(function (item)
+  let displayMenu = menuItems.map(function (item)
   {
     return `
     <article class="menu-item">
