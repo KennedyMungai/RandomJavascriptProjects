@@ -10,3 +10,16 @@
 //     })
 // })
 
+
+const questions = document.querySelectorAll('.question')
+
+questions.forEach(function (question)
+{
+    // console.log(question, querySelector)
+    const btn = question.querySelector('.question-btn')
+    // console.log(btn)
+    btn.addEventListener('click', function ()
+    {
+        question.classList.toggle('show-text')
+    })
+})  
