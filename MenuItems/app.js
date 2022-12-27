@@ -88,7 +88,7 @@ filterBtns.forEach(function (btn)
 {
   btn.addEventListener('click', function (e)
   {
-    console.log(e.currentTarget.dataset.id)
+    const category = e.currentTarget.dataset.id
   })
 })
 
