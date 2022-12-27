@@ -75,3 +75,8 @@ const menu = [
 
 
 const sectionCenter = document.querySelector('.section-center')
+
+window.addEventListener('DOMContentLoaded', function ()
+{
+  console.log('shake that thing miss Kana Kana')
+})
