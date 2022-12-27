@@ -85,15 +85,14 @@ window.addEventListener('DOMContentLoaded', function ()
 
     return `
     <article class="menu-item">
-      <img src="menu-item.jpeg" alt="Food" class="photo">
+      <img src=${item.img} alt="Food" class="photo">
       <div class="item-info">
         <header>
-          <h4>Buttermilk Pancakes</h4>
-          <h4 class="price">$15</h4>
+          <h4>${item.title}</h4>
+          <h4 class="price">${item.price}</h4>
         </header>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat cupiditate maxime laborum eveniet placeat
-          qui vel obcaecati officia non adipisci.
+          ${item.desc}
         </p>
       </div>
     </article>
