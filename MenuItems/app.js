@@ -89,7 +89,22 @@ filterBtns.forEach(function (btn)
   btn.addEventListener('click', function (e)
   {
     const category = e.currentTarget.dataset.id
-    const menuCategory = menu
+    const menuCategory = menu.filter(function (menuItem)
+    {
+      if (category === menuItem.category)
+      {
+        // console.log(menuItem)
+        return menuItem
+      }
+    })
+    if (category === 'all')
+    {
+      displayMenuItems(menu)
+    }
+    else
+    {
+      displayMenuItems(menuCategory)
+    }
   })
 })
 
