@@ -78,5 +78,13 @@ const sectionCenter = document.querySelector('.section-center')
 
 window.addEventListener('DOMContentLoaded', function ()
 {
-  console.log('shake that thing miss Kana Kana')
+  // console.log('shake that thing miss Kana Kana')
+  let displayMenu = menu.map(function (item)
+  {
+    console.log(item)
+
+    return item
+  })
+
+  console.log(displayMenu)
 })
