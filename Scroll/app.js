@@ -13,6 +13,7 @@ const navToggle = document.querySelector('.nav-toggle')
 const linksContainer = document.querySelector('.links-container')
 const links = document.querySelector('.links')
 const navbar = document.getElementById('nav')
+const topLink = document.querySelector('.top-link')
 
 navToggle.addEventListener('click', function ()
 {
@@ -42,6 +43,15 @@ window.addEventListener('scroll', function ()
     else
     {
         navbar.classList.remove('fixed-nav')
+    }
+
+    if (scrollY >= this.document.getElementById('home').getBoundingClientRect().height)
+    {
+        topLink.classList.add('show-link')
+    }
+    else
+    {
+        topLink.classList.remove('show-link')
     }
 })
 // ********** smooth scroll ************
