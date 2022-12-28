@@ -10,4 +10,8 @@ btn, addEventListener('click', function ()
     {
         btn.classList.add('slide')
     }
+    else
+    {
+        btn.classList.remove('slide')
+    }
 })
