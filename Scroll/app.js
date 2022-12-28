@@ -12,6 +12,7 @@ date.textContent = currentDate.getFullYear().toString()
 const navToggle = document.querySelector('.nav-toggle')
 const linksContainer = document.querySelector('.links-container')
 const links = document.querySelector('.links')
+const navbar = document.getElementById('nav')
 
 navToggle.addEventListener('click', function ()
 {
@@ -33,7 +34,15 @@ navToggle.addEventListener('click', function ()
 // ********** fixed navbar ************
 window.addEventListener('scroll', function ()
 {
-    console.log(scrollY)
+    // console.log(scrollY)
+    if (scrollY >= linksContainer.getBoundingClientRect().height)
+    {
+        navbar.classList.add('fixed-nav')
+    }
+    else
+    {
+        navbar.classList.remove('fixed-nav')
+    }
 })
 // ********** smooth scroll ************
 // select links
