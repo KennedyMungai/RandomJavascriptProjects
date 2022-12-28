@@ -89,7 +89,7 @@ window.addEventListener('DOMContentLoaded', function ()
       value.push(item.category)
     }
 
-    return values
+    return value
   }, ['all'])
 
   const categoryBtns = categories.map(function (category)
