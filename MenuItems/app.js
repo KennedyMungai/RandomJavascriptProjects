@@ -84,6 +84,11 @@ window.addEventListener('DOMContentLoaded', function ()
 
   const categories = menu.reduce(function (value, item)
   {
+    if (!values.includes(item.category))
+    {
+      values.push(item.category)
+    }
+
     return values
   }, ['all'])
 
