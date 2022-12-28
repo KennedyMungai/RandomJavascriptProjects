@@ -82,9 +82,9 @@ window.addEventListener('DOMContentLoaded', function ()
 {
   displayMenuItems(menu)
 
-  const categories = menu.reduce(function ()
+  const categories = menu.reduce(function (value, item)
   {
-
+    return values
   }, ['all'])
 
   console.log(categories)
