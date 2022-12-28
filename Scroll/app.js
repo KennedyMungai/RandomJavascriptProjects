@@ -19,7 +19,12 @@ navToggle.addEventListener('click', function ()
     const containerHeight = linksContainer.getBoundingClientRect().height
     // console.log(containerHeight)
     const linksHeight = links.getBoundingClientRect().height
-    console.log(linksHeight)
+    // console.log(linksHeight)
+
+    if (containerHeight === 0)
+    {
+        linksContainer.style.height = `${linksHeight}px`
+    }
 })
 // ********** fixed navbar ************
 
