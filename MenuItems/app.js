@@ -82,10 +82,10 @@ window.addEventListener('DOMContentLoaded', function ()
 {
   displayMenuItems(menu)
 
-  const categories = menu.map(function (item)
+  const categories = menu.reduce(function ()
   {
-    return item.category
-  })
+
+  }, ['all'])
 
   console.log(categories)
 })
