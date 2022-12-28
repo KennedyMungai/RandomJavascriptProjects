@@ -84,7 +84,6 @@ const menu = [
 
 const sectionCenter = document.querySelector('.section-center')
 const btnsContainer = document.querySelector('.btn-container')
-const filterBtns = document.querySelectorAll('.filter-btn')
 
 // Load items
 window.addEventListener('DOMContentLoaded', function ()
@@ -109,6 +108,8 @@ window.addEventListener('DOMContentLoaded', function ()
   console.log(categoryBtns)
 
   btnsContainer.innerHTML = categoryBtns
+  const filterBtns = document.querySelectorAll('.filter-btn')
+
 })
 
 // Filter Items
