@@ -108,34 +108,34 @@ window.addEventListener('DOMContentLoaded', function ()
   console.log(categoryBtns)
 
   btnsContainer.innerHTML = categoryBtns
-  const filterBtns = document.querySelectorAll('.filter-btn')
 
+  const filterBtns = document.querySelectorAll('.filter-btn')
+  filterBtns.forEach(function (btn)
+  {
+    btn.addEventListener('click', function (e)
+    {
+      const category = e.currentTarget.dataset.id
+      const menuCategory = menu.filter(function (menuItem)
+      {
+        if (category === menuItem.category)
+        {
+          // console.log(menuItem)
+          return menuItem
+        }
+      })
+      if (category === 'all')
+      {
+        displayMenuItems(menu)
+      }
+      else
+      {
+        displayMenuItems(menuCategory)
+      }
+    })
+  })
 })
 
 // Filter Items
-filterBtns.forEach(function (btn)
-{
-  btn.addEventListener('click', function (e)
-  {
-    const category = e.currentTarget.dataset.id
-    const menuCategory = menu.filter(function (menuItem)
-    {
-      if (category === menuItem.category)
-      {
-        // console.log(menuItem)
-        return menuItem
-      }
-    })
-    if (category === 'all')
-    {
-      displayMenuItems(menu)
-    }
-    else
-    {
-      displayMenuItems(menuCategory)
-    }
-  })
-})
 
 function displayMenuItems(menuItems)
 {
