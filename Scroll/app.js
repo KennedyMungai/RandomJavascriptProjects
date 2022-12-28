@@ -15,7 +15,7 @@ const links = document.querySelector('.links')
 
 navToggle.addEventListener('click', function ()
 {
-    linksContainer.classList.toggle('show-links')
+    // linksContainer.classList.toggle('show-links')
 })
 // ********** fixed navbar ************
 
