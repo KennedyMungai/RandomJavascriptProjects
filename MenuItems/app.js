@@ -84,9 +84,9 @@ window.addEventListener('DOMContentLoaded', function ()
 
   const categories = menu.reduce(function (value, item)
   {
-    if (!values.includes(item.category))
+    if (!value.includes(item.category))
     {
-      values.push(item.category)
+      value.push(item.category)
     }
 
     return values
