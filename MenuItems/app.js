@@ -89,7 +89,38 @@ const btnsContainer = document.querySelector('.btn-container')
 window.addEventListener('DOMContentLoaded', function ()
 {
   displayMenuItems(menu)
+  displayMenuButtons()
+})
 
+function displayMenuItems(menuItems)
+{
+  let displayMenu = menuItems.map(function (item)
+  {
+    return `
+    <article class="menu-item">
+      <img src=${item.img} alt="Food" class="photo">
+      <div class="item-info">
+        <header>
+          <h4>${item.title}</h4>
+          <h4 class="price">${item.price}</h4>
+        </header>
+        <p>
+          ${item.desc}
+        </p>
+      </div>
+    </article>
+    `
+  })
+
+  displayMenu = displayMenu.join('')
+
+  // console.log(displayMenu)
+
+  sectionCenter.innerHTML = displayMenu
+}
+
+function displayMenuButtons()
+{
   const categories = menu.reduce(function (value, item)
   {
     if (!value.includes(item.category))
@@ -133,33 +164,4 @@ window.addEventListener('DOMContentLoaded', function ()
       }
     })
   })
-})
-
-// Filter Items
-
-function displayMenuItems(menuItems)
-{
-  let displayMenu = menuItems.map(function (item)
-  {
-    return `
-    <article class="menu-item">
-      <img src=${item.img} alt="Food" class="photo">
-      <div class="item-info">
-        <header>
-          <h4>${item.title}</h4>
-          <h4 class="price">${item.price}</h4>
-        </header>
-        <p>
-          ${item.desc}
-        </p>
-      </div>
-    </article>
-    `
-  })
-
-  displayMenu = displayMenu.join('')
-
-  // console.log(displayMenu)
-
-  sectionCenter.innerHTML = displayMenu
 }
