@@ -105,7 +105,7 @@ window.addEventListener('DOMContentLoaded', function ()
     return `<button class="filter-btn" type="button" data-id=${category}>${category}</button>`
   }).join('')
 
-  console.log(categoryBtns)
+  // console.log(categoryBtns)
 
   btnsContainer.innerHTML = categoryBtns
 
