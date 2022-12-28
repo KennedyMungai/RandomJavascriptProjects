@@ -71,6 +71,11 @@ scrollLinks.forEach(function (link)
         const element = document.getElementById(id)
 
         let position = element.offsetTop
-        console.log(position)
+        // console.log(position)
+
+        window.scrollTo({
+            left: 0,
+            top: position
+        })
     })
 })
