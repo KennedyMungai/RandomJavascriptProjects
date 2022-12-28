@@ -66,6 +66,10 @@ scrollLinks.forEach(function (link)
 
         // navigate to specific spot
         const id = e.currentTarget.getAttribute('href').slice(1)
-        console.log(id)
+        // console.log(id)
+
+        const element = document.getElementById(id)
+
+        let position = element.offsetTop
     })
 })
