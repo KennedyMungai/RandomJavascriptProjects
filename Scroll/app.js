@@ -71,5 +71,6 @@ scrollLinks.forEach(function (link)
         const element = document.getElementById(id)
 
         let position = element.offsetTop
+        console.log(position)
     })
 })
