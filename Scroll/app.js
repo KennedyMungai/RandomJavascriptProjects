@@ -9,7 +9,9 @@ let currentDate = new Date()
 
 date.textContent = currentDate.getFullYear().toString()
 // ********** close links ************
-
+const bavToggle = document.querySelector('.nav-toggle')
+const linksContainer = document.querySelector('.links-container')
+const links = document.querySelector('.links')
 // ********** fixed navbar ************
 
 // ********** smooth scroll ************
