@@ -86,6 +86,8 @@ window.addEventListener('DOMContentLoaded', function ()
   {
     return item.category
   })
+
+  console.log(categories)
 })
 
 // Filter Items
