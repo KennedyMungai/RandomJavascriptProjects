@@ -7,7 +7,7 @@
 const date = document.querySelector('.date')
 let currentDate = new Date()
 
-date.innerText = currentDate.getFullYear()
+date.textContent = currentDate.getFullYear().toString()
 // ********** close links ************
 
 // ********** fixed navbar ************
