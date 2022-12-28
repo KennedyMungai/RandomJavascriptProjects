@@ -63,5 +63,9 @@ scrollLinks.forEach(function (link)
     {
         // prevents the default behaviour
         e.preventDefault()
+
+        // navigate to specific spot
+        const id = e.currentTarget.getAttribute('href')
+        console.log(id)
     })
 })
