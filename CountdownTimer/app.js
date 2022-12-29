@@ -30,3 +30,11 @@ const items = document.querySelectorAll('.deadline-format h4')
 
 let futureDate = new Date();
 // console.log(futureDate)
+const year = futureDate.getFullYear()
+const month = futureDate.getUTCMonth()
+const day = futureDate.getDay()
+const hour = futureDate.getHours()
+const minute = futureDate.getMinutes()
+const seconds = futureDate.getSeconds()
+
+giveaway.textContent = `giveaway ends on ${year} ${months[month]} ${day}`
