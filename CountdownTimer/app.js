@@ -60,6 +60,16 @@ function getRemainingTime(time)
   // Setting the values array
   const values = [days, hours, minutes, seconds]
 
+  function format(item)
+  {
+    if (item < 10)
+    {
+      return item = `0${item}`
+    }
+
+    return item
+  }
+
   items.forEach(function (item, index)
   {
     item.textContent = values[index]
