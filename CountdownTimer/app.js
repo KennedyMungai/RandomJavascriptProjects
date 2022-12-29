@@ -72,7 +72,7 @@ function getRemainingTime(time)
 
   items.forEach(function (item, index)
   {
-    item.textContent = values[index]
+    item.textContent = format(values[index])
   })
 }
 
