@@ -27,11 +27,6 @@ const deadline = document.querySelector('.deadline')
 const items = document.querySelectorAll('.deadline-format h4')
 
 let futureDate = new Date(2023, 0, 15, 8, 34, 00);
-let tempDate = new Date()
-
-let tempYear = tempDate.getFullYear()
-let tempMonth = tempDate.getMonth()
-let tempDay = tempDate.getDate()
 
 const year = futureDate.getFullYear()
 const month = futureDate.getUTCMonth()
