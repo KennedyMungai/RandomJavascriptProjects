@@ -26,10 +26,8 @@ const giveaway = document.querySelector('.giveaway')
 const deadline = document.querySelector('.deadline')
 const items = document.querySelectorAll('.deadline-format h4')
 
-// console.log(items)
-
 let futureDate = new Date(2023, 0, 15, 8, 34, 00);
-// console.log(futureDate)
+
 const year = futureDate.getFullYear()
 const month = futureDate.getUTCMonth()
 const day = futureDate.getDay()
