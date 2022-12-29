@@ -29,4 +29,4 @@ const items = document.querySelectorAll('.deadline-format h4')
 // console.log(items)
 
 let futureDate = new Date();
-console.log(futureDate)
+// console.log(futureDate)
