@@ -14,6 +14,7 @@ about.addEventListener('click', function (e)
         btns.forEach(function (btn)
         {
             btn.classList.remove('active')
+            e.target.classList.add('active')
         })
     }
 })
