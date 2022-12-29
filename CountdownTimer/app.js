@@ -37,4 +37,4 @@ const hour = futureDate.getHours()
 const minute = futureDate.getMinutes()
 const seconds = futureDate.getSeconds()
 
-giveaway.textContent = `giveaway ends on ${year} ${months[month]} ${day}`
+giveaway.textContent = `giveaway ends on ${year} ${months[month]} ${weekdays[day]}`
