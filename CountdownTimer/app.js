@@ -56,7 +56,14 @@ function getRemainingTime(time)
   let minutes = Math.floor((timeDiff % oneHour) / oneMinute)
   let seconds = Math.floor((timeDiff % oneMinute) / oneSecond)
 
-  console.log(days, hours, minutes, seconds)
+  // console.log(days, hours, minutes, seconds)
+  // Setting the values array
+  const values = [days, hours, minutes, seconds]
+
+  items.forEach(function (item, index)
+  {
+    item.textContent = values[index]
+  })
 }
 
 console.log(getRemainingTime(futureTime))
