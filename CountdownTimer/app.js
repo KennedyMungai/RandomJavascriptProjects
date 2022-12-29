@@ -66,4 +66,7 @@ function getRemainingTime(time)
   })
 }
 
-console.log(getRemainingTime(futureTime))
+setInterval(() =>
+{
+  getRemainingTime(futureTime)
+}, 1000);
