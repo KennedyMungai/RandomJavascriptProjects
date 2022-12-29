@@ -46,6 +46,10 @@ function getRemainingTime(time)
   let currentTime = new Date().getTime()
   timeDiff = time - currentTime
 
+  const oneDay = 24 * 60 * 60 * 1000
+  const oneHour = 60 * 60 * 1000
+  const oneMinute = 60 * 1000
+  const oneSecond = 1000
 }
 
 console.log(getRemainingTime(futureTime))
