@@ -50,6 +50,13 @@ function getRemainingTime(time)
   const oneHour = 60 * 60 * 1000
   const oneMinute = 60 * 1000
   const oneSecond = 1000
+
+  let days = Math.floor(timeDiff / oneDay)
+  let hours = Math.floor((timeDiff % oneDay) / oneHour)
+  let minutes = Math.floor((timeDiff % oneHour) / oneMinute)
+  let seconds = Math.floor((timeDiff % oneMinute) / oneSecond)
+
+  console.log(days, hours, minutes, seconds)
 }
 
 console.log(getRemainingTime(futureTime))
