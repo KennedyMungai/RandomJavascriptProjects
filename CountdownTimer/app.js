@@ -39,3 +39,13 @@ giveaway.textContent = `giveaway ends on ${weekdays[day]}, ${months[month]} ${ye
 
 // A statement that converts future date to milliseconds
 const futureTime = futureDate.getTime()
+
+
+function getRemainingTime(time)
+{
+  let currentTime = new Date().getTime()
+  timeDiff = time - currentTime
+
+}
+
+console.log(getRemainingTime(futureTime))
