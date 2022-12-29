@@ -36,3 +36,6 @@ const minute = futureDate.getMinutes()
 const seconds = futureDate.getSeconds()
 
 giveaway.textContent = `giveaway ends on ${weekdays[day]}, ${months[month]} ${year} `
+
+// A statement that converts future date to milliseconds
+const futureTime = futureDate.getTime()
