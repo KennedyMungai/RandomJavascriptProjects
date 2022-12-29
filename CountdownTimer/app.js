@@ -74,9 +74,15 @@ function getRemainingTime(time)
   {
     item.textContent = format(values[index])
   })
+
+  if (timeDiff < 0)
+  {
+    clearInterval()
+    deadline.innerHTML = `<h4 class="expired">Sorry, this giveaway has expired</h4>`
+  }
 }
 
 setInterval(() =>
 {
-  getRemainingTime(futureTime)
+  getRemainingTime(futureDate)
 }, 1000);
