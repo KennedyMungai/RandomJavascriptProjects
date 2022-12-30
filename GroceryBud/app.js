@@ -67,7 +67,7 @@ function addItem(e)
     }
     else if (value && editFlag)
     {
-        console.log('editing')
+        editElement.textContent = value
     }
     else
     {
