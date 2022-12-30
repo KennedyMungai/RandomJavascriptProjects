@@ -120,7 +120,7 @@ function clearItems()
 // edit function
 function editItem()
 {
-
+    console.log('edit item')
 }
 // delete function
 function deleteItem()
