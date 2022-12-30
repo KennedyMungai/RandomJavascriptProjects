@@ -22,7 +22,10 @@ function addItem(e)
 
     if (value && !editFlag)
     {
-        console.log('adding item to the list')
+        const element = document.createElement('article')
+
+        // add class
+        element.classList.add('grocery-item')
     }
     else if (value && editFlag)
     {
