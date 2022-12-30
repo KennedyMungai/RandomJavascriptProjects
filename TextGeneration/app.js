@@ -20,9 +20,6 @@ const result = document.querySelector('.lorem-text')
 form.addEventListener('submit', function (e)
 {
   e.preventDefault()
-  // console.log('hello')
-
   const value = amount.value
-
   console.log(value)
 })
