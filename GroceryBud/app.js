@@ -87,6 +87,7 @@ function setBackToDefault()
 {
     grocery.value = ''
     editFlag = false
+    editId = ''
 }
 
 // ****** LOCAL STORAGE **********
