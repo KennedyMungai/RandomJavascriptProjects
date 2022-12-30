@@ -88,6 +88,7 @@ function setBackToDefault()
     grocery.value = ''
     editFlag = false
     editId = ''
+    submitBtn.textContent = 'submit'
 }
 
 // ****** LOCAL STORAGE **********
