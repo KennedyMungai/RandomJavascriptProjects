@@ -31,6 +31,17 @@ function addItem(e)
         const attr = document.createAttribute('data-id')
         attr.value = id
         element.setAttributeNode(attr)
+        element.innerHTML = `
+        <p class="title">item</p>
+        <div class="btn-container">
+          <button class="edit-btn">
+            <i class="fas fa-edit"></i>
+          </button>
+          <button class="delete-btn">
+            <1 class="fas fa-trash"></1>
+          </button>
+        </div>
+        `
     }
     else if (value && editFlag)
     {
