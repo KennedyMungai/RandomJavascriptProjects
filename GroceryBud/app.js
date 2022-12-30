@@ -31,6 +31,7 @@ function addItem(e)
     else
     {
         alert.textContent = 'empty value'
+        alert.classList.add('alert-danger')
     }
 }
 // ****** LOCAL STORAGE **********
