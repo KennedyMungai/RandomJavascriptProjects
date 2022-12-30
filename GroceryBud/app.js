@@ -209,3 +209,8 @@ function setupItems()
         items
     }
 }
+
+function createListItem(id, value)
+{
+
+}
