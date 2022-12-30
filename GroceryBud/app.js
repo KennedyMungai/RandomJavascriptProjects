@@ -158,7 +158,8 @@ function deleteItem(e)
 // ****** LOCAL STORAGE **********
 function addToLocalStorage(id, value)
 {
-    // console.log("Added to local storage")
+    const grocery = { id, value }
+    let items = localStorage.getItem('list') ? JSON.parse(localStorage.getItem('list')) : []
 }
 
 function removeFromLocalStorage(id)
