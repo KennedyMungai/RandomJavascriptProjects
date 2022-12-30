@@ -45,6 +45,9 @@ function addItem(e)
 
         // append child
         list.appendChild(element)
+
+        // display alert
+        displayAlert("item added to the list", "success")
     }
     else if (value && editFlag)
     {
