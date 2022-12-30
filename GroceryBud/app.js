@@ -13,6 +13,7 @@ let editId = ''
 // ****** EVENT LISTENERS **********
 // submit form
 form.addEventListener('submit', addItem)
+clearBtn.addEventListener('click', clearItems)
 // ****** FUNCTIONS **********
 function addItem(e)
 {
