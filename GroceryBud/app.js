@@ -38,7 +38,7 @@ function addItem(e)
             <i class="fas fa-edit"></i>
           </button>
           <button class="delete-btn">
-            <1 class="fas fa-trash"></1>
+            <i class="fas fa-trash"></i>
           </button>
         </div>
         `
