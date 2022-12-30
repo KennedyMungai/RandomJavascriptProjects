@@ -160,7 +160,6 @@ function addToLocalStorage(id, value)
 {
     const grocery = { id, value }
     let items = getLocalStorage()
-    console.log(items)
     items.push(grocery)
     localStorage.setItem('list', JSON.stringify(items))
 }
