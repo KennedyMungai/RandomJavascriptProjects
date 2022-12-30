@@ -21,5 +21,5 @@ form.addEventListener('submit', function (e)
 {
   e.preventDefault()
   const value = parseInt(amount.value)
-  console.log(value)
+  console.log(typeof value)
 })
