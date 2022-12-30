@@ -95,7 +95,7 @@ function setBackToDefault()
 //clear list 
 function clearItems()
 {
-
+    const items = document.querySelectorAll('.grocery-item')
 }
 // ****** LOCAL STORAGE **********
 function addToLocalStorage(id, value)
