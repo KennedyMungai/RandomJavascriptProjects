@@ -28,8 +28,16 @@ form.addEventListener('submit', function (e)
   }
   else
   {
-    // return text[value]
-    // console.log(text[value])
+    let string = []
+    let tempValue
+
+    for (let i = 0; i < value; i++)
+    {
+      tempValue = text[Math.floor(text.length * Math.random())]
+      string.push(tempValue)
+    }
+
+    result.textContent = string.join("\r\n \r\n")
   }
 
 })
