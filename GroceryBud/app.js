@@ -128,6 +128,7 @@ function editItem(e)
 
     // set form value
     grocery.value = editElement.textContent
+    editFlag = true
 }
 // delete function
 function deleteItem(e)
