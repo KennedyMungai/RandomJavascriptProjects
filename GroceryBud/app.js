@@ -83,6 +83,11 @@ function displayAlert(text, action)
 }
 
 // set back to default
+function setBackToDefault()
+{
+
+}
+
 // ****** LOCAL STORAGE **********
 function addToLocalStorage(id, value)
 {
