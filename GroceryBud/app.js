@@ -14,6 +14,7 @@ let editId = ''
 // submit form
 form.addEventListener('submit', addItem)
 clearBtn.addEventListener('click', clearItems)
+window.addEventListener('DOMContentLoaded', setupItems)
 // ****** FUNCTIONS **********
 function addItem(e)
 {
