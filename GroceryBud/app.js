@@ -142,11 +142,11 @@ function deleteItem(e)
 // ****** LOCAL STORAGE **********
 function addToLocalStorage(id, value)
 {
-    console.log("Added to local storage")
+    // console.log("Added to local storage")
 }
 
 function removeFromLocalStorage(id)
 {
-    console.log("Item of id ${id} removed from local storage")
+    // console.log("Item of id ${id} removed from local storage")
 }
 // ****** SETUP ITEMS **********
