@@ -130,6 +130,7 @@ function editItem(e)
     grocery.value = editElement.textContent
     editFlag = true
     editId = element.dataset.id
+    submitBtn.textContent = 'edit'
 }
 // delete function
 function deleteItem(e)
