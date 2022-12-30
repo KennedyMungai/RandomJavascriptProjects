@@ -19,5 +19,5 @@ const result = document.querySelector('.lorem-text')
 
 form.addEventListener('submit', function (e)
 {
-
+  console.log('hello')
 })
