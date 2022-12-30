@@ -122,6 +122,9 @@ function editItem(e)
 {
     // console.log('edit item')
     const element = e.currentTarget.parentElement.parentElement
+
+    // set the edit item
+    editElement = e.currentTarget.parentElement.previousElementSibling
 }
 // delete function
 function deleteItem(e)
