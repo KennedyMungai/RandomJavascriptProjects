@@ -70,6 +70,7 @@ function addItem(e)
         editElement.textContent = value
         displayAlert('value changed', 'success')
         // edit local storage
+        editLocalStorage(editId, value)
         setBackToDefault()
     }
     else
