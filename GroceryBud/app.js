@@ -24,35 +24,6 @@ function addItem(e)
 
     if (value && !editFlag)
     {
-        const element = document.createElement('article')
-
-        // add class
-        element.classList.add('grocery-item')
-
-        // add id
-        const attr = document.createAttribute('data-id')
-        attr.value = id
-        element.setAttributeNode(attr)
-        element.innerHTML = `
-        <p class="title">${value}</p>
-        <div class="btn-container">
-          <button class="edit-btn">
-            <i class="fas fa-edit"></i>
-          </button>
-          <button class="delete-btn">
-            <i class="fas fa-trash"></i>
-          </button>
-        </div>
-        `
-
-        const deleteBtn = element.querySelector('.delete-btn')
-        const editBtn = element.querySelector('.edit-btn')
-
-        deleteBtn.addEventListener('click', deleteItem)
-        editBtn.addEventListener('click', editItem)
-
-        // append child
-        list.appendChild(element)
 
         // display alert
         displayAlert("item added to the list", "success")
@@ -212,5 +183,34 @@ function setupItems()
 
 function createListItem(id, value)
 {
+    const element = document.createElement('article')
+
+    // add class
+    element.classList.add('grocery-item')
+
+    // add id
+    const attr = document.createAttribute('data-id')
+    attr.value = id
+    element.setAttributeNode(attr)
+    element.innerHTML = `
+    <p class="title">${value}</p>
+    <div class="btn-container">
+      <button class="edit-btn">
+        <i class="fas fa-edit"></i>
+      </button>
+      <button class="delete-btn">
+        <i class="fas fa-trash"></i>
+      </button>
+    </div>
+    `
+
+    const deleteBtn = element.querySelector('.delete-btn')
+    const editBtn = element.querySelector('.edit-btn')
+
+    deleteBtn.addEventListener('click', deleteItem)
+    editBtn.addEventListener('click', editItem)
+
+    // append child
+    list.appendChild(element)
 
 }
