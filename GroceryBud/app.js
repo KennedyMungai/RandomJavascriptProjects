@@ -24,7 +24,7 @@ function addItem(e)
 
     if (value && !editFlag)
     {
-
+        createListItem(id, value)
         // display alert
         displayAlert("item added to the list", "success")
 
