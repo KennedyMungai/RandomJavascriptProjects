@@ -121,6 +121,7 @@ function clearItems()
 function editItem()
 {
     // console.log('edit item')
+    const element = e.currentTarget.parentElement.parentElement
 }
 // delete function
 function deleteItem(e)
