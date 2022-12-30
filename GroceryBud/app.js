@@ -34,6 +34,12 @@ function addItem(e)
         alert.classList.add('alert-danger')
     }
 }
+
+// display alert
+function displayAlert(text, action)
+{
+
+}
 // ****** LOCAL STORAGE **********
 
 // ****** SETUP ITEMS **********
