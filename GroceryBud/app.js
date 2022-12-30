@@ -17,6 +17,7 @@ form.addEventListener('submit', addItem)
 function addItem(e)
 {
     e.preventDefault()
+    const value = grocery.value
 }
 // ****** LOCAL STORAGE **********
 
