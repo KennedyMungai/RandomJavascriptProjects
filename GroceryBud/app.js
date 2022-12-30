@@ -48,6 +48,8 @@ function addItem(e)
 
         // display alert
         displayAlert("item added to the list", "success")
+
+        list.classList.add('show-container')
     }
     else if (value && editFlag)
     {
