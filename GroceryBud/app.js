@@ -91,6 +91,8 @@ function setBackToDefault()
     submitBtn.textContent = 'submit'
 }
 
+//clear list 
+
 // ****** LOCAL STORAGE **********
 function addToLocalStorage(id, value)
 {
