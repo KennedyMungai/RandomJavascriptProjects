@@ -86,6 +86,7 @@ function displayAlert(text, action)
 function setBackToDefault()
 {
     grocery.value = ''
+    editFlag = false
 }
 
 // ****** LOCAL STORAGE **********
