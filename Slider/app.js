@@ -28,3 +28,13 @@ function carousel()
         slide.style.transform = `translateX(-${counter * 100}%)`
     })
 }
+
+if (counter === slides.length)
+{
+    counter = 0
+}
+
+if (counter < 0)
+{
+    counter = slides.length
+}
