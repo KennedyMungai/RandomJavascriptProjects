@@ -93,7 +93,10 @@ function setBackToDefault()
 }
 
 //clear list 
+function clearItems()
+{
 
+}
 // ****** LOCAL STORAGE **********
 function addToLocalStorage(id, value)
 {
