@@ -176,7 +176,7 @@ function removeFromLocalStorage(id)
         }
     })
 
-    localStorage.setItem('list', items)
+    localStorage.setItem('list', JSON.stringify(items))
 }
 
 function editLocalStorage(id, value)
@@ -192,7 +192,7 @@ function editLocalStorage(id, value)
         return item
     })
 
-    localStorage.setItem('list', JSON.stringify(items)
+    localStorage.setItem('list', JSON.stringify(items))
 }
 
 function getLocalStorage()
