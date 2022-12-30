@@ -42,6 +42,9 @@ function addItem(e)
           </button>
         </div>
         `
+
+        // append child
+        list.appendChild(element)
     }
     else if (value && editFlag)
     {
