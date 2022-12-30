@@ -123,9 +123,15 @@ function editItem()
     console.log('edit item')
 }
 // delete function
-function deleteItem()
+function deleteItem(e)
 {
-    console.log('item deleted')
+    const element = e.currentTarget.parentElement.parentElement;
+    list.removeChild(element)
+
+    if (list.children.length === 0)
+    {
+        container.classList.remove('show-container')
+    }
 }
 
 // ****** LOCAL STORAGE **********
