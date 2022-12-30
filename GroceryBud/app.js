@@ -18,6 +18,7 @@ function addItem(e)
 {
     e.preventDefault()
     const value = grocery.value
+    const id = new Date.getTime()
 }
 // ****** LOCAL STORAGE **********
 
