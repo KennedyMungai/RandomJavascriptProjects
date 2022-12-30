@@ -32,7 +32,7 @@ function addItem(e)
         attr.value = id
         element.setAttributeNode(attr)
         element.innerHTML = `
-        <p class="title">item</p>
+        <p class="title">${value}</p>
         <div class="btn-container">
           <button class="edit-btn">
             <i class="fas fa-edit"></i>
