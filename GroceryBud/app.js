@@ -118,8 +118,15 @@ function clearItems()
 }
 
 // edit function
+function editItem()
+{
 
+}
 // delete function
+function deleteItem()
+{
+
+}
 
 // ****** LOCAL STORAGE **********
 function addToLocalStorage(id, value)
