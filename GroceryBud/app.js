@@ -129,6 +129,7 @@ function editItem(e)
     // set form value
     grocery.value = editElement.textContent
     editFlag = true
+    editId = element.dataset.id
 }
 // delete function
 function deleteItem(e)
