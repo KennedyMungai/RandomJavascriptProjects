@@ -104,6 +104,8 @@ function clearItems()
             list.removeChild(item)
         })
     }
+
+    container.classList.remove('show-container')
 }
 // ****** LOCAL STORAGE **********
 function addToLocalStorage(id, value)
