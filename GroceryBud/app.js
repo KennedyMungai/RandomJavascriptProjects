@@ -166,7 +166,7 @@ function removeFromLocalStorage(id)
     // console.log("Item of id ${id} removed from local storage")
 }
 
-function editLocalStorage(editId, value)
+function editLocalStorage(id, value)
 {
     // console.log()
 }
