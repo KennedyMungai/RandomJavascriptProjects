@@ -24,13 +24,12 @@ form.addEventListener('submit', function (e)
 
   if (!value || value < 0 || value > 9)
   {
-    // return text[Math.floor(text.length * Math.random())]
-    console.log(text[Math.floor(text.length * Math.random())])
+    result.textContent = text[Math.floor(text.length * Math.random())]
   }
   else
   {
     // return text[value]
-    console.log(text[value])
+    // console.log(text[value])
   }
 
 })
