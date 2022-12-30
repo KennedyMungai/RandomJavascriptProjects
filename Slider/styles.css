@@ -299,6 +299,7 @@ Slider
   }
 }
 
+/* 
 .slide:nth-child(1) {
   left: 0;
 }
@@ -317,6 +318,6 @@ Slider
 
 .slide {
   transform: translateX(-100%);
-}
+} */
 
 /* negative value moves to left
