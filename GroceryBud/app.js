@@ -30,15 +30,15 @@ function addItem(e)
     }
     else
     {
-        alert.textContent = 'empty value'
-        alert.classList.add('alert-danger')
+        displayAlert("please enter a value", "danger")
     }
 }
 
 // display alert
 function displayAlert(text, action)
 {
-
+    alert.textContent = text
+    alert.classList.add(`alert-${action}`)
 }
 // ****** LOCAL STORAGE **********
 
