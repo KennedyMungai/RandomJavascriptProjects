@@ -16,3 +16,8 @@ I just told you! You've killed me! Fry! Quit doing the right thing, you jerk! Mi
 const form = document.querySelector('.lorem-form')
 const amount = document.getElementById('amount')
 const result = document.querySelector('.lorem-text')
+
+form.addEventListener('submit', function (e)
+{
+
+})
