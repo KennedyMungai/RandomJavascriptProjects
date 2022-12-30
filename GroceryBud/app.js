@@ -132,6 +132,8 @@ function deleteItem(e)
     {
         container.classList.remove('show-container')
     }
+
+    displayAlert("item removed", "danger")
 }
 
 // ****** LOCAL STORAGE **********
