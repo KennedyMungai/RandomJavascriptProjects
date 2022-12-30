@@ -160,6 +160,7 @@ function addToLocalStorage(id, value)
 {
     const grocery = { id, value }
     let items = localStorage.getItem('list') ? JSON.parse(localStorage.getItem('list')) : []
+    items.push(grocery)
 }
 
 function removeFromLocalStorage(id)
