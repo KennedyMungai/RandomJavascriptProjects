@@ -86,6 +86,6 @@ function displayAlert(text, action)
 // ****** LOCAL STORAGE **********
 function addToLocalStorage(id, value)
 {
-
+    console.log("Added to local storage")
 }
 // ****** SETUP ITEMS **********
