@@ -85,7 +85,7 @@ function displayAlert(text, action)
 // set back to default
 function setBackToDefault()
 {
-
+    console.log("Set back to default")
 }
 
 // ****** LOCAL STORAGE **********
