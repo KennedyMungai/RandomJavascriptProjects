@@ -125,7 +125,7 @@ function editItem()
 // delete function
 function deleteItem()
 {
-
+    console.log('item deleted')
 }
 
 // ****** LOCAL STORAGE **********
