@@ -11,7 +11,8 @@ let editElement;
 let editFlag = false
 let editId = ''
 // ****** EVENT LISTENERS **********
-
+// submit form
+form.addEventListener('submit', addItem)
 // ****** FUNCTIONS **********
 
 // ****** LOCAL STORAGE **********
