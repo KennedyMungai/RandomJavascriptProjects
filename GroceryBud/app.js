@@ -80,7 +80,7 @@ function displayAlert(text, action)
     {
         alert.classList.remove(`alert-${action}`)
         alert.textContent = ''
-    }, 2500);
+    }, 1000);
 }
 
 // set back to default
