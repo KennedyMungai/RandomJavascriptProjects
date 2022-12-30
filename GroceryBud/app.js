@@ -126,6 +126,8 @@ function editItem()
 function deleteItem(e)
 {
     const element = e.currentTarget.parentElement.parentElement;
+    const id = element.dataset.id
+
     list.removeChild(element)
 
     if (list.children.length === 0)
