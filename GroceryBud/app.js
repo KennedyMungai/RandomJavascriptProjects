@@ -81,6 +81,11 @@ function displayAlert(text, action)
         alert.textContent = ''
     }, 2500);
 }
-// ****** LOCAL STORAGE **********
 
+// set back to default
+// ****** LOCAL STORAGE **********
+function addToLocalStorage(id, value)
+{
+
+}
 // ****** SETUP ITEMS **********
