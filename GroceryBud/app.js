@@ -167,7 +167,17 @@ function addToLocalStorage(id, value)
 
 function removeFromLocalStorage(id)
 {
-    // console.log("Item of id ${id} removed from local storage")
+    let items = getLocalStorage()
+
+    items = items.filter(function (item)
+    {
+        if (item.id !== id)
+        {
+            return item
+        }
+    })
+
+    localStorage.setItem('list', items)
 }
 
 function editLocalStorage(id, value)
