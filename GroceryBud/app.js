@@ -48,6 +48,7 @@ function addItem(e)
         const editBtn = element.querySelector('.edit-btn')
 
         deleteBtn.addEventListener('click', deleteItem)
+        editBtn.addEventListener('click', editItem)
 
         // append child
         list.appendChild(element)
