@@ -22,7 +22,7 @@ form.addEventListener('submit', function (e)
   e.preventDefault()
   const value = parseInt(amount.value)
 
-  if (!value || value < 0 || value > 9)
+  if (isNan(value) || value < 0 || value > 9)
   {
     result.textContent = text[Math.floor(text.length * Math.random())]
   }
