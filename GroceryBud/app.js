@@ -51,6 +51,9 @@ function addItem(e)
 
         // show container
         container.classList.add('show-container')
+
+        //add to local storage
+        addToLocalStorage(id, value)
     }
     else if (value && editFlag)
     {
