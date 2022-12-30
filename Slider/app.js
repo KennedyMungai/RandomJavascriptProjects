@@ -13,3 +13,8 @@ nextBtn.addEventListener('click', function ()
 {
     counter++
 })
+
+prevBtn.addEventListener('click', function ()
+{
+    counter--
+})
