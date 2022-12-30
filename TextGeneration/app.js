@@ -23,4 +23,6 @@ form.addEventListener('submit', function (e)
   // console.log('hello')
 
   const value = amount.value
+
+  console.log(value)
 })
