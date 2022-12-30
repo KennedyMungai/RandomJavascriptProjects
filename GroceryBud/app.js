@@ -127,7 +127,7 @@ function editItem(e)
     editElement = e.currentTarget.parentElement.previousElementSibling
 
     // set form value
-    grocery.value = editElement.innerHTML
+    grocery.value = editElement.textContent
 }
 // delete function
 function deleteItem(e)
