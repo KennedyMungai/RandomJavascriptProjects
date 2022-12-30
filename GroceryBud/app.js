@@ -68,6 +68,7 @@ function addItem(e)
     else if (value && editFlag)
     {
         editElement.textContent = value
+        displayAlert('value changed', 'success')
     }
     else
     {
