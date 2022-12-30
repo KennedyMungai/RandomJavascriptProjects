@@ -36,5 +36,5 @@ if (counter === slides.length)
 
 if (counter < 0)
 {
-    counter = slides.length
+    counter = slides.length - 1
 }
