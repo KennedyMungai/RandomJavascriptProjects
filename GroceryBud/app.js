@@ -69,6 +69,7 @@ function addItem(e)
     {
         editElement.textContent = value
         displayAlert('value changed', 'success')
+        setBackToDefault()
     }
     else
     {
