@@ -21,4 +21,15 @@ form.addEventListener('submit', function (e)
 {
   e.preventDefault()
   const value = parseInt(amount.value)
+
+  if (!value || value < 0 || value > 9)
+  {
+    // console.log('out of bounds')
+    return text[Math.floor(text.length * Math.random)]
+  }
+  else
+  {
+    return text[value]
+  }
+
 })
