@@ -30,7 +30,7 @@ function addItem(e)
     }
     else
     {
-        console.log('empty value')
+        alert.textContent = 'empty value'
     }
 }
 // ****** LOCAL STORAGE **********
